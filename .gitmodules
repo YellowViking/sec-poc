@@ -1,0 +1,3 @@
+[submodule "libs/tls-parser"]
+	path = libs/tls-parser
+	url = https://github.com/rusticata/tls-parser.git
