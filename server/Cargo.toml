@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+log = "0.4.25"
+rustls = { version = "0.23.22", features = ["logging", "ring"] }
+rsa = { version = "0.9.7", features = ["getrandom", "sha2"] }
+sha2 = "0.11.0-pre.4"
+env_logger = "0.11.6"
+anyhow = "1.0.95"
+rcgen = { version = "0.13.2", features = ["pem", "crypto", "aws_lc_rs"] }
+x509-cert = { version = "0.2.5", features = ["builder"] }
+hickory-resolver = "0.25.0-alpha.4"
