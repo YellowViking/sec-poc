@@ -10,7 +10,7 @@ This PoC implements minimal TLS1.3 manually and TPM2.0 operations using TSS2.0 w
 
 ### Architecture
 
-:::mermaid
+```mermaid
 sequenceDiagram
     participant Client
     participant TPM as Client TPM
@@ -39,7 +39,7 @@ sequenceDiagram
     Client ->> Server: CertificateVerify
     Client ->> Server: Finished
     Server ->> Client: ApplicationData
-:::
+```
 
 ### Key Takeaways
 1. In TLS1.3, the only time the client uses its private key is during CertificateVerify.
